@@ -1,0 +1,59 @@
+
+.contentLinkItem{
+    position: absolute;
+    bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    animation: slideY 1.5s;
+}
+
+@keyframes slideY{
+    from{
+        transform: translateY(90px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+
+
+.modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.modalHeader button{
+    border: 0;
+    background: transparent;
+}
+
+.contentLinkItem span{
+    margin: 14px 0;
+    color: #A7A7A7;
+font-size: 15px;
+}
+
+.modalLink{
+background-color: #172742;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 14px;
+height: 38px;
+border: 0;
+border-radius: 4px;
+color: #fff;
+}
+
+
+@media (max-width: 735px){
+    .contentLinkItem{
+        width: 90%;
+    }
+}
